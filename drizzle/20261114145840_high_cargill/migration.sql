@@ -1,0 +1,1 @@
+ALTER TABLE "neon_auth"."task" ADD COLUMN "user_id" serial;

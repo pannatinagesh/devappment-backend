@@ -1,0 +1,45 @@
+{
+    "compilerOptions": {
+        /* Target & Environment */
+        "target": "ES2022", /* Specify ECMAScript target version */
+        "module": "NodeNext", /* Specify module code generation for modern Node.js */
+        "moduleResolution": "NodeNext", /* Validate imports using Node.js rules */
+        "lib": [
+            "ES2022"
+        ], /* Specify library files to be included in the compilation */
+        "jsx": "react-jsx", /* Allow parsing of .tsx files (no actual JSX used) */
+        /* Path Aliasing (Importing by @) */
+        "paths": {
+            "@/*": [
+                "./*"
+            ] /* Maps '@/' to the project root */
+        },
+        /* Strict Type-Checking Options */
+        "strict": true, /* Enable all strict type-checking options */
+        "noImplicitAny": true, /* Enable error reporting for expressions with an implied 'any' type */
+        "strictNullChecks": true, /* Control whether 'null' and 'undefined' are ignored during type checking */
+        "noUncheckedIndexedAccess": true, /* Add 'undefined' to a type when accessing an array or object index */
+        /* Additional Checks */
+        "noUnusedLocals": true, /* Report errors on unused local variables */
+        "noUnusedParameters": true, /* Report errors on unused parameters */
+        "noFallthroughCasesInSwitch": true, /* Report errors for fallthrough cases in switch statements */
+        /* Emit Settings */
+        "outDir": "./dist", /* Redirect output structure to the directory */
+        "sourceMap": true, /* Create source map files for debuggers */
+        "removeComments": true, /* Do not emit comments to output */
+        /* Interop & Advanced */
+        "esModuleInterop": true, /* Emit additional JavaScript to ease support for importing CommonJS modules */
+        "forceConsistentCasingInFileNames": true, /* Ensure that casing is correct in imports */
+        "skipLibCheck": true /* Skip type checking of declaration files (.d.ts) */
+    },
+    "include": [
+        "**/*.ts",
+        "**/*.tsx"
+    ], /* Include all TypeScript files in the project */
+    "exclude": [
+        "node_modules",
+        "dist",
+        "**/*.spec.ts",
+        "**/*.test.ts"
+    ]
+}

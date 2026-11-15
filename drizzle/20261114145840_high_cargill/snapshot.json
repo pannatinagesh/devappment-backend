@@ -1,0 +1,47 @@
+{
+  "type": "diff",
+  "version": "9",
+  "dialect": "postgres",
+  "id": "748ef9c9-21d9-4ef3-a334-f3226b913055",
+  "prevIds": [
+    "7d6e7eeb-aeae-4d05-b05a-d9bbfae3f692"
+  ],
+  "footprints": [
+    {
+      "statementType": "add_column",
+      "statementTarget": [
+        "column",
+        "neon_auth",
+        "task",
+        "user_id"
+      ],
+      "writes": [
+        "s|col|neon_auth.task.user_id",
+        "n|col|neon_auth.task.user_id",
+        "e|col|neon_auth.task.user_id"
+      ],
+      "reads": [
+        "n|tbl|neon_auth.task",
+        "n|sch|neon_auth"
+      ]
+    }
+  ],
+  "deltas": [
+    {
+      "op": "create",
+      "row": {
+        "schema": "neon_auth",
+        "table": "task",
+        "name": "user_id",
+        "type": "serial",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    }
+  ]
+}
