@@ -90,7 +90,7 @@ export const getGoogleChat = async (userId: number, message: string) => {
             })
         );
         contents.push({ role: 'user', parts: responseParts });
-console.log(contents)
+
         response = await ai.models.generateContent({
             model: 'gemini-3.5-flash',
             contents,
